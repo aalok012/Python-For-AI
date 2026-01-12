@@ -11,3 +11,9 @@ class BlogPost(BaseModel):
     content: str
     image_url: Optional[str]= None
     
+cart_data={
+    "user_id": 123,
+    "items": ["Laptop", "Mouse", "Keyboard"],
+    "quantities": {"laptop": 1, "mouse": 2, "keyboard":3}
+}
+cart = Cart(**cart_data)
